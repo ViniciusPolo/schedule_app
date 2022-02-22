@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name='csrf-token' content='{{ csrf_token() }}'>
 
-    <title>Instact @yield('title')</title>
+    <title>Organizer @yield('title')</title>
 
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/bootstrap-icons.css') }}">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
-<body>
+<body >
     @yield('content')
 
     <script src="{{ asset('plugins/sweetalert/sweetalert2.all.min.js') }}"></script>

@@ -7,7 +7,15 @@
         <form class="mw-100" action="{{ route('signin') }}" method="post" style="width: 400px;">
             @csrf
 
-            <h1 class="mb-5 text-secondary text-center">Login</h1>
+            <a href="/dashboard" class="nav-link me-1" style="margin: 0 0 35px 60px; color:#707070; border: #707070 solid 5px; border-radius: 20px; width: 70%; text-align:center">
+                <div>
+                    <i class="bi bi-calendar4-event fs-1" ></i>
+                    <i class="bi bi-calendar4-week fs-1" >
+                        <span style="font-size:50%">Organizer.com</span>
+                    </i>
+                    
+                </div>
+            </a>
 
             <div class="mb-3">
                 <input class="form-control" type="email" name="email" placeholder="E-mail" required>

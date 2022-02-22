@@ -1,12 +1,20 @@
 @extends('layouts.app')
 
-@section('title', '| Dashboard')
+@section('title', '| Main')
 
 @section('content')
-    <a href="{{ route('logout') }}" class="position-absolute top-0 end-0 link-secondary p-3">
-        <i class="bi bi-box-arrow-right fs-3"></i>
-    </a>
-    <div class="min-vh-100 d-flex justify-content-center align-items-center">
-        <h1>Dashboard</h1>
+    @include('components/navbar')
+    <div style="margin-top: 10vh;">
+        <a href="{{ route('logout') }}" class="position-absolute top-0 end-0 link-secondary p-3" style="width: 1300px; height: 1000px; display: table-cell; text-align: center; vertical-align: middle;">
+            <i class="bi bi-box-arrow-right fs-3"></i>
+        </a>
+        <div class=" card min-vh-100 justify-content-center align-items-center">
+            @foreach ($tasks as $task)
+            <div class="" style="margin: 5px">
+                @include('components/showtasks')
+            </div>
+            @endforeach
+        </div>
     </div>
+    
 @endsection

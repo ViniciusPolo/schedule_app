@@ -12,7 +12,7 @@
             </a>
         </div>
         <div class="navbar-nav flex-row">
-            <a href="/create" class="nav-link me-3">
+            <a href="/create" class="nav-link me-3" target="Nova Tarefa">
                 <i class="bi bi-plus-square fs-1">{{--<i> ícone no html--}}
                 </i>
             </a>

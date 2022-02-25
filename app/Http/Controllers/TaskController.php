@@ -95,14 +95,27 @@ class TaskController extends Controller
      */
     public function update(Request $request, $id)
     {
+        /*$complete = $request->is_complete;
+        if($complete == 'on'){
+            $this->iscomplete = 1;
+        } else {
+            $this->iscomplete = 0;
+        }*/
+        $data = $request->all();
+        if(!$request->get('is_complete')){ 
+            $data['is_complete'] = 0; 
+        } else {
+            $data['is_complete'] = 1; 
+        }
+        
         $input = $request->only(
             'title',
             'description',
             'finish_when',
-            'is_complete'
         );        
             $task = Task::find($id);
             $task->update($input);
+            $task->update($data);
             return redirect('dashboard');
     }
 

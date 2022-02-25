@@ -20,14 +20,17 @@
         <a href="/tasks/{{$task->id}}" class="link-secondary p-3 nav-link me-3">
             <i class="bi bi-eyeglasses fs-1 link-secondary">{{--<i> ícone no html--}}
             </i>
+            <p>View</p>
         </a>
         <a href="/tasks/edit/{{$task->id}}" class="link-secondary p-3 nav-link me-3">
             <i class="bi bi-pencil-square fs-1 link-secondary">{{--<i> ícone no html--}}
             </i>
+            <p>Edit</p>
         </a>
-        <a href="/dashboard/delete/{{$task->id}}" class="link-secondary p-3 nav-link me-3">
+        <a href="/dashboard/delete/{{$task->id}}" class="link-secondary p-3 nav-link me-3" target="Nova Tarefa">
             <i class="bi bi-trash fs-1">{{--<i> ícone no html--}}
             </i>
+            <p>Delete</p>
         </a>
 </div>
 

@@ -15,7 +15,8 @@ class Task extends Model
         'title',
         'description',
         'image',
-        'is_complete'
+        'is_complete',
+        'finish_when'
     ];
 
     /**

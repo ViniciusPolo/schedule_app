@@ -21,7 +21,7 @@
        </div>
 
        <div class="mb-3">
-           <input class="form-control" type="datetime" name="finish_when" placeholder="finish when">
+           <input class="form-control" type="datetime" name="finish_when" placeholder="yyyy-mm-dd hh:mm:ss">
         </div>
         
         <div class="mb-3 form-check">

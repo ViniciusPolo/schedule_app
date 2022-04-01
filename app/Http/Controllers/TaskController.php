@@ -52,7 +52,7 @@ class TaskController extends Controller
             'image'=>$url,
             'user_id'=>$input['user_id'],
             'finish_when'=>$request->finish_when,
-            'is_complete'=>$request->is_complete
+            'is_complete'=>0
 
         ]);
        //$request->only('description');
@@ -95,23 +95,19 @@ class TaskController extends Controller
      */
     public function update(Request $request, $id)
     {
-        /*$complete = $request->is_complete;
-        if($complete == 'on'){
-            $this->iscomplete = 1;
-        } else {
-            $this->iscomplete = 0;
-        }*/
+
         $data = $request->all();
         if(!$request->get('is_complete')){ 
             $data['is_complete'] = 0; 
         } else {
             $data['is_complete'] = 1; 
         }
+
         
         $input = $request->only(
             'title',
             'description',
-            'finish_when',
+            //'finish_when',
         );        
             $task = Task::find($id);
             $task->update($input);

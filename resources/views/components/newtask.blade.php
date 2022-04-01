@@ -24,12 +24,7 @@
        </div>
 
        <div class="mb-3">
-           <input class="form-control" type="datetime" name="finish_when" placeholder="finish when">
-        </div>
-        
-        <div class="mb-3 form-check">
-            <input name="is_complete" type="checkbox" class="form-check-input" id="remember" value=1>
-            <label class="form-check-label" for="is_complete">Is Complete</label>
+           <input class="form-control" type="datetime" name="finish_when" placeholder="yyyy-mm-dd hh:mm:ss">
         </div>
         
         <div class="d-grid gap-2">
